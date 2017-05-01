@@ -1,0 +1,80 @@
+@media (min-width: 768px) {
+.Home .headline-container header {
+    margin-top: -50px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.Home .headline-container header .container{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    width: 900px;
+}
+
+.Home .headline-container header .headline-text{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.Home .headline-container header .button-container {
+    width: 320px;
+    margin: 50px auto;
+}
+
+.Home .headline-container header .headline-button{
+    width: 150px;
+}
+
+.Home .headline-container header .headline-button:last-child{
+    margin-left: 10px; 
+}
+.Home .headline-container header .headline-button:first-child{
+    margin-right: 10px;
+}
+
+.Home .feature-container{
+    position: relative;
+    padding-top: 30px;
+}
+
+.Home .feature-container .background-image{
+    top: 0;
+    opacity: .2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.Home .feature-container .container{
+    position: relative;
+    z-index: 1;
+}
+
+.Home .feature-container .panel{
+    background: none !important;
+    border: none !important;
+}
+
+.Home .feature-container .panel-heading{
+    background: none !important;
+    border: none !important;
+}
+
+.Home .feature-container .panel-body{
+    margin-top: -10px; 
+}
+.Home .feature-container .panel-body .headline-text{
+    margin-top: 0 !important; 
+}
+/*
+.Home .feature-container .panel-heading img{
+    width: 85%;
+    margin: 0 auto;
+}*/
+
+
+
+
+}

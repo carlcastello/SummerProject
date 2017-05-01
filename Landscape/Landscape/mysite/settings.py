@@ -123,6 +123,7 @@ MIDDLEWARE_CLASSES = (
 
 INSTALLED_APPS = (
     'djangocms_admin_style',
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -131,23 +132,36 @@ INSTALLED_APPS = (
     'django.contrib.sitemaps',
     'django.contrib.staticfiles',
     'django.contrib.messages',
+
     'cms',
     'menus',
     'sekizai',
     'treebeard',
     'djangocms_text_ckeditor',
-    'filer',
-    'easy_thumbnails',
+    # 'filer',
+    # 'easy_thumbnails',
+    
     'djangocms_column',
     'djangocms_link',
+    
     'cmsplugin_filer_file',
     'cmsplugin_filer_folder',
     'cmsplugin_filer_image',
     'cmsplugin_filer_utils',
-    'djangocms_style',
+
+    # 'djangocms_style',
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
+    
+    'aldryn_style',
+
+    'easy_thumbnails',
+    'mptt',
+    'filer',
+    'aldryn_bootstrap3',
+
+
     'mysite'
 )
 
@@ -177,8 +191,7 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
-    ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('home.html', 'Home'),
 )
 
 CMS_PERMISSION = True
@@ -207,3 +220,54 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+CKEDITOR_SETTINGS = {
+    'stylesSet': [
+        {
+            'name': 'Large Headline',
+            'element': 'h1',
+           'attributes': {
+                'class': 'headline-text'
+            }
+        },
+        {
+            'name': 'Medium Headline',
+            'element': 'h2',
+            'attributes': {
+                'class': 'headline-text'
+            }
+        },
+        {
+            'name': 'Small Headline',
+            'element': 'h3',
+            'attributes': {
+                'class': 'headline-text'
+            }
+        },
+        {
+            'name': 'Large Title',
+            'element': 'h1',
+            'attributes': {
+                'class': 'page-header'
+            }
+        },
+        {
+            'name': 'Medium Title',
+            'element': 'h2',
+            'attributes': {
+                'class': 'page-header'
+            }
+        },
+        {
+            'name': 'Small Title',
+            'element': 'h3',
+            'attributes': {
+                'class': 'page-header'
+            }
+        },    
+        {
+            'name': 'Paragraph',
+            'element': 'p',      
+        }
+    ],
+}
