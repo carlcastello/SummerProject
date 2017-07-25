@@ -1,0 +1,179 @@
+.Home {
+    background: #222;
+}
+
+.Profile {
+    margin-top: 50px;
+}
+
+.carousel-container{
+    position:relative;
+}
+/*
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+*/
+
+.navbar-header img {
+    height: 46px;
+    margin: 2px 0px;
+}
+
+.panel-group {
+    margin-top: 20px;
+}
+
+.panel-group a{
+    text-decoration: none !important;
+}
+
+.panel-group .panel-inverse:hover {
+    border-color: #080808;
+}
+
+.panel-group .panel-inverse:hover *{
+    color: #000 !important;
+    -webkit-transition: all 0.5s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
+    transition: all 0.5s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+.panel-group .panel-inverse:hover .panel-heading {
+    background: #f5f5f5 !important;
+}
+.panel-group .panel-inverse:hover .panel-body {
+    background: #fff !important;
+}
+
+.panel-group .panel-inverse .panel-heading,
+.panel-group .panel-inverse .panel-body {
+    background: #222 !important;
+    color: white !important;
+}
+
+.transition {
+    -webkit-transition: all 0.5s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
+    transition: all 0.5s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+.carousel-style-standard a{
+    display: none;
+}
+
+.carousel-text-container {
+    position: absolute;
+    background: rgba(34,34,34,.5);
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+.bio-header p{
+    margin: 0;
+}
+
+.skills-container p {
+    margin-bottom: 5px;
+}
+
+.education-container .panel-body {
+    padding-top: 26px;
+}
+
+
+@media (min-width: 1020px) {
+    .Home>.carousel-container{
+        margin-top: -50px;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .carousel-inner .item img{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .Home>.container {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background: rgba(34, 34, 34, 0.5)
+    }
+
+    .carousel-text-container {
+        top: 43vh;
+        padding-right: 200px;
+        right: 0;
+    }
+
+    .panel-group .panel-inverse{
+        opacity: 0 !important;
+    }
+
+    .panel-group .panel-inverse.show {
+        opacity: 100 !important;
+    }
+
+    .panel-group>div:nth-child(1) .panel-inverse.show{
+        -webkit-transition: all 1s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
+        transition: all .8s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+    }
+
+    .panel-group>div:nth-child(2) .panel-inverse.show{
+        -webkit-transition: all 1s ease-out .5s;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
+        transition: all .8s ease-out .5s;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+    }
+
+    .panel-group>div:nth-child(3) .panel-inverse.show{
+        -webkit-transition: all 1s ease-out 1s;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
+        transition: all .8s ease-out 1s;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+    }
+    .panel-group>div:nth-child(4) .panel-inverse.show{
+        -webkit-transition: all 1s ease-out 1s;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
+        transition: all .8s ease-out 1.5s;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+    }
+}
+
+@media (max-width: 1019px) {
+    .carousel-text-container {
+        bottom: 0;
+        width: 100%;
+        left: 15px;
+    }
+}
+@media (max-width: 1019px) and (min-width:768px) {
+    .panel-group>div:nth-child(3),
+    .panel-group>div:nth-child(4){
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .panel-group>div:nth-child(2),
+    .panel-group>div:nth-child(3),
+    .panel-group>div:nth-child(4){
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 501px) {
+    .carousel-text-container .title {
+        font-size: 3em;
+    }
+
+    .carousel-text-container .description {
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 500px) {
+    .carousel-text-container .title {
+        font-size: 2em;
+    }
+
+    .carousel-text-container .description {
+        font-size: 1em;
+    }
+}
