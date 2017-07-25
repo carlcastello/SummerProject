@@ -161,6 +161,7 @@ INSTALLED_APPS = (
     'filer',
     'aldryn_bootstrap3',
 
+    'cmsplugin_fancybox',
 
     'mysite'
 )

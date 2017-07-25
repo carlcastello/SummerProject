@@ -7,10 +7,21 @@ $(".Home .headline-container header img").each(function(i, elem) {
     background: "url(" + img.attr("src") + ") no-repeat center center",
     // background-position: "left -1px",
     width: "inherit",
-    height: "100vh"
+    // min-height: "100vh";
   });
   img.replaceWith(div);
 });
+
+
+$(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    var $header = $(".headline-container");
+    $nav.toggleClass('color-change', $(this).scrollTop() > $header.height() - $nav.height() );
+});
+
+$(".cmsplugin_fancybox_link img").wrap("<div class='gallery-wrapper'></div>");
+$(".gallery-wrapper").append("<div class='hover-overlay'></div>");
+
 
 
 // $(".Home .feature-container .background-image").each(function(i, elem) {
