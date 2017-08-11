@@ -136,6 +136,7 @@ INSTALLED_APPS = (
     'sekizai',
     'treebeard',
     'djangocms_text_ckeditor',
+    'mptt',
     'filer',
     'easy_thumbnails',
     'djangocms_column',
@@ -144,11 +145,14 @@ INSTALLED_APPS = (
     'cmsplugin_filer_folder',
     'cmsplugin_filer_image',
     'cmsplugin_filer_utils',
-    'djangocms_style',
+    # 'djangocms_style',
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'houseforsale'
+    'houseforsale',
+    'aldryn_style',
+    
+    'aldryn_bootstrap3'
 )
 
 LANGUAGES = (

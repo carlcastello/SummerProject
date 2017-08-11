@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+    <header>
+        {% placeholder Carousel or %}
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
+                <hr>
+                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+        {% endplaceholder %}
+    </header>
+
+    <section class="bg-primary" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    {% placeholder About or %}
+                    <h2 class="section-heading">We've got what you need!</h2>
+                    <hr class="light">
+                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                    {% endplaceholder %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Features</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            {% placeholder Panels or %}
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-bed text-primary sr-icons"></i>
+                        <h3>Sturdy Templates</h3>
+                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+
+                        <i class="fa fa-4x fa-bath text-primary sr-icons"></i>
+                        <h3>Ready to Ship</h3>
+                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-car text-primary sr-icons"></i>
+                        <h3>Up to Date</h3>
+                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>Made with Love</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
+            </div>
+            {% endplaceholder %}
+        </div>
+    </section>
+
+    <section id="description"  class="bg-dark">
+        <div class="container">
+            {% placeholder "Description" or %}
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Description</h2>
+                    <hr class="primary">
+                    <p>Integer id ultricies massa. Morbi ut odio dui. Phasellus eget fringilla magna. Ut a scelerisque tortor. Sed dictum ornare neque, in lobortis diam. Nulla euismod mi non diam pretium, a congue ante venenatis. In ut scelerisque erat, ac laoreet nibh. Sed eu blandit urna, quis egestas lacus. Integer ornare molestie mauris.</p>
+                </div>
+            </div>
+            {% endplaceholder %}
+        </div>
+    </section>
+
+    <section id="home_tour">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Home Tour</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" >
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15526.734080247214!2d121.19530086774768!3d13.369944390595386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDIyJzExLjgiTiAxMjHCsDEyJzE0LjYiRQ!5e0!3m2!1sen!2sca!4v1502425374176" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+{% endblock content %}
