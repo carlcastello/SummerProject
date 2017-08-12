@@ -28,7 +28,9 @@ SECRET_KEY = 'cupr(*%hhn)0ccxri3zr(b$ma4io*n)+*o#59ao@b#70l5mg9f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+	"52.15.153.56"
+]
 
 
 # Application definition
