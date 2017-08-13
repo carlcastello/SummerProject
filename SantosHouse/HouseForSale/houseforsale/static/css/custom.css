@@ -26,6 +26,8 @@
 header .header-content .header-content-inner hr {
     margin: 15px auto;
 }
+
+
 @media (min-width: 768px) {
     .Home>.carousel-container{
         margin-top: -50px;
@@ -60,3 +62,35 @@ header .header-content .header-content-inner hr {
     }
 }
 
+
+@media (min-width: 1200px) {
+    .image-blueprint {
+        height: 340px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .image-blueprint {
+        height: 277px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .image-blueprint {
+        margin: 0 auto 30px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 481px) {
+    .image-blueprint {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-blueprint {
+        height: 350px;
+    }
+}
