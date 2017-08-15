@@ -27,6 +27,32 @@ header .header-content .header-content-inner hr {
     margin: 15px auto;
 }
 
+.image-overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+
+@media (min-width: 1200px) {
+    .image-blueprint {
+        height: 340px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .image-blueprint {
+        height: 277px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .image-blueprint {
+        margin: 0 auto 30px;
+    }
+}
 
 @media (min-width: 768px) {
     .Home>.carousel-container{
@@ -62,27 +88,6 @@ header .header-content .header-content-inner hr {
     }
 }
 
-
-@media (min-width: 1200px) {
-    .image-blueprint {
-        height: 340px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 1199px) and (min-width: 992px) {
-    .image-blueprint {
-        height: 277px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 991px) {
-    .image-blueprint {
-        margin: 0 auto 30px;
-    }
-}
-
 @media (max-width: 991px) and (min-width: 481px) {
     .image-blueprint {
         height: 400px;
@@ -92,5 +97,86 @@ header .header-content .header-content-inner hr {
 @media (max-width: 480px) {
     .image-blueprint {
         height: 350px;
+    }
+}
+
+/* Related media queries for circles */
+.circle{
+    background: rgb(240,95,64);
+    width: 10px;
+    height:10px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+@media (min-width: 1200px) {
+    #stairs-marker {
+        top: 170px;
+        left: 170px;
+    }
+
+    #living-room-marker {
+        top: 145px;
+        left: 130px;
+    }
+
+    #family-room-marker {
+        top: 146px;
+        left: 255px;
+    }
+
+    #kitchen-marker {
+        top: 77px;
+        left: 234px;
+    }
+
+    #dining-room-marker {
+        top: 120px;
+        left: 165px;
+    }
+
+    #terrace-one-marker {
+        top: 120px;
+        left: 100px;
+    }
+
+    #terrace-two-marker {
+        top: 165px;
+        left: 100px;
+    }
+
+    #terrace-three-marker {
+        top:210px;
+        left:100px;
+    }
+
+    #terrace-four-marker {
+        top:250px;
+        left:145px;
+    }
+
+    #master-bedroom-marker {
+        top: 250px;
+        left:210px;
+    }
+
+    #bedroom-one-marker {
+        top: 80px;
+        left: 180px;
+    }
+
+    #bedroom-two-marker {
+        top: 80px;
+        left: 280px;
+    }
+
+    #bedroom-three-marker {
+        top: 170px;
+        left: 270px;
+    }
+
+    #hallway-marker {
+        top: 130px;
+        left: 215px;
     }
 }
