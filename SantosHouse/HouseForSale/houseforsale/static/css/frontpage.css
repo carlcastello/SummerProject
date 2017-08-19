@@ -20,7 +20,7 @@
 }
 
 .carousel-style-standard a{
-    display: none;
+    background: transparent !important;
 }
 
 header .header-content .header-content-inner hr {
@@ -35,6 +35,7 @@ header .header-content .header-content-inner hr {
 }
 
 @media (min-width: 1200px) {
+    
     .image-blueprint {
         height: 340px;
         margin: 0 auto;
@@ -55,13 +56,6 @@ header .header-content .header-content-inner hr {
 }
 
 @media (min-width: 768px) {
-    .Home>.carousel-container{
-        margin-top: -50px;
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-    }
-
     .carousel-inner .item img{
         height: 100vh;
         width: 100%;
@@ -107,6 +101,10 @@ header .header-content .header-content-inner hr {
     height:10px;
     position: absolute;
     border-radius: 10px;
+}
+
+.circle:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 1200px) {
@@ -178,5 +176,83 @@ header .header-content .header-content-inner hr {
     #hallway-marker {
         top: 130px;
         left: 215px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    #stairs-marker {
+        top: 140px;
+        left: 135px;
+    }
+
+    #living-room-marker {
+        top: 115px;
+        left: 105px;
+    }
+
+    #family-room-marker {
+        top: 115px;
+        left: 210px;
+    }
+
+    #kitchen-marker {
+        top: 60px;
+        left: 190px;
+    }
+
+    #dining-room-marker {
+        top: 95px;
+        left: 135px;
+    }
+
+    #terrace-one-marker {
+        top: 95px;
+        left: 80px;
+    }
+
+    #terrace-two-marker {
+        top: 135px;
+        left: 80px;
+    }
+
+    #terrace-three-marker {
+        top:170px;
+        left:80px;
+    }
+
+    #terrace-four-marker {
+        top:210px;
+        left:115px;
+    }
+
+    #master-bedroom-marker {
+        top: 210px;
+        left:165px;
+    }
+
+    #bedroom-one-marker {
+        top: 65px;
+        left: 150px;
+    }
+
+    #bedroom-two-marker {
+        top: 65px;
+        left: 225px;
+    }
+
+    #bedroom-three-marker {
+        top: 140px;
+        left: 215px;
+    }
+
+    #hallway-marker {
+        top: 110px;
+        left: 175px;
+    }
+}
+
+@media (max-width: 991px) {
+    .circle {
+        display: none !important;
     }
 }
