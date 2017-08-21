@@ -1,0 +1,52 @@
+/* CSS for Gallery Page */
+.Gallery  .navbar-default.affix-top {
+    background-color: #F05F40;
+    border-color: #ffab99;
+    color: #ffffff !important;
+}
+
+.Gallery  .navbar-default.affix-top a {
+    color: #fff;
+}
+
+.gallery-page-content {
+    margin-top: 60px;
+}
+
+.gallery-page-content {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.gallery-page-content .row {
+    margin: 0px;
+}
+
+.gallery-page-content .column {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+.gallery-page-content .row>*>img {
+    width: 100%;
+
+}
+.gallery-page-content .row>*>img:hover {
+    cursor: pointer;
+}
+
+
+
+
+@media (min-width: 992px) {
+    .gallery-page-content .row>*>img {
+        height: 350px;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    .gallery-page-content .row>*>img {
+        height: 280px;
+    }
+}
+

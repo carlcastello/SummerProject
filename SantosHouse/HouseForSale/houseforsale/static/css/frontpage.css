@@ -68,21 +68,19 @@ header .header-content .header-content-inner hr {
         background: rgba(34, 34, 34, 0.5)
     }
 
-    .carousel-text-container {
-        top: 43vh;
-        padding-right: 200px;
-        right: 0;
-    }
-
     .carousel-caption {
         right: 0px !important;
         left: 0px !important;
-        top: 75vh !important;
+        top: 55% !important;
 
     }
 }
 
 @media (max-width: 991px) and (min-width: 481px) {
+
+    .carousel-caption {
+        top: 10% !important;
+    }
     .image-blueprint {
         height: 400px;
     }

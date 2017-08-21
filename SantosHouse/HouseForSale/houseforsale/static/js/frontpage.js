@@ -1,7 +1,7 @@
 $(function() {
-    var boo = $('.gallery img').attr('src');
-    $('.gallery img').removeAttr('src');
-    $('.gallery img').attr('href',boo);
+    var boo = $('.Home .gallery img').attr('src');
+    $('.Home .gallery img').removeAttr('src');
+    $('.Home .gallery img').attr('href',boo);
 
 
     $('.gallery').each(function () {
