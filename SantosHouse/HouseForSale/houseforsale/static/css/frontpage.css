@@ -1,3 +1,18 @@
+hr {
+    border-color: #D2B48C;
+}
+
+.bg-primary {
+    background: #D2B48C;
+}
+
+#contact a,
+.navbar-default.affix .navbar-header .navbar-brand,
+.text-primary {
+    color: #D2B48C !important;
+}
+
+
 .panel {
     margin-top:20px;
     margin-bottom: 0px;
@@ -23,9 +38,7 @@
     background: transparent !important;
 }
 
-header .header-content .header-content-inner hr {
-    margin: 15px auto;
-}
+
 
 .image-overlay {
     height: 100%;
@@ -56,6 +69,10 @@ header .header-content .header-content-inner hr {
 }
 
 @media (min-width: 768px) {
+    header .header-content {
+        top: 80%;
+    }
+
     .carousel-inner .item img{
         height: 100vh;
         width: 100%;

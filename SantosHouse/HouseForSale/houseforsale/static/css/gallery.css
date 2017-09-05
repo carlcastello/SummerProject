@@ -1,7 +1,7 @@
 /* CSS for Gallery Page */
 .Gallery  .navbar-default.affix-top {
-    background-color: #F05F40;
-    border-color: #ffab99;
+    background-color: #D2B48C;
+    border-color: #FDD9B5;
     color: #ffffff !important;
 }
 
@@ -45,7 +45,7 @@
     height: 100%;
     top: 0;
     width: 100%;
-    background: rgba(240, 95, 64, .9);
+    background: rgba(210, 180, 140, 1);
     webkit-transition: all .2s;
     moz-transition: all .2s;
     transition: all .2s;
